@@ -15,7 +15,7 @@ export class LoginPage {
 
     async informaSenha(senha) {
         for (const digito of senha) {
-            await this.page.getByRole('button', { name: digito }).click();
+            await this.page.getByRole('button', { name: digito }).click(); //incluindo um comentario
         }
         await this.page.getByRole('button', { name: 'Continuar' }).click();
     }
